@@ -1,4 +1,11 @@
 <?php
+/*
+if else    # student pass or fail ,#odd even
+if elseif else   #postive or negtive no  #vowels or consonant # three number max
+if else ladder #minimum no if else ladders
+break goto continue
+switch  # simple calculate using switchcase #week day using switch case
+*/
 
 # student pass or fail
 $a=68;
