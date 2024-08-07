@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#test1").text("hello world");
+  });
+  $("#test2").html("<b> hello world</b>");
+  });
+  $("#btn3").click(function(){
+    $("#test3").val("donald duck");
+  });
+});
+</script>
+</head>
+<body>
+<p id="test1">this is paragraph</p>
+<p id="test2">this is another paragraph</p>
+<p>input field: <input type="text" id="test3" value="mickey mouse "></p>
+
+<button id="btn1">set text</button>
+<button id="btn2">set HTML</button>
+<button id="btn3">set value</button>
+
+</body>
+</html>

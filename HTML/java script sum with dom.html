@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function calculate() {
+    var a = parseInt(document.getElementById('txta').value);
+    var b = parseInt(document.getElementById('txtb').value);
+    var c = a + b;
+    document.getElementById("txtc").value = "" + c;
+}
+
+</script>
+</head>
+<body> 
+	<h1 align="center">THE SUM PROGRAM </h1><hr>
+	<table>
+
+		<tr>
+			<td>
+				<form method="post">
+                <label> ENTER:A </label>
+			</td>
+			<td> 
+<input type="text" name="txta" id="txta"/>
+			</td>
+</tr>
+
+	<tr>
+			<td>
+				<label>ENTER:B</label>
+
+			</td>
+			<td>
+				<input type="text" name="txtb" id="txtb"/>
+			</td>
+</tr>
+
+<tr>
+			<td>  <input type="button"  value="calculate" onclick="calculate()"/>   </td>
+</tr>
+
+<tr>
+			<td>  <input type="reset" name="reset" value="reset ">          </td>
+</tr>
+
+<tr>
+			<td>
+				<label>SUM:</label>
+			</td>
+			<td>
+			<input type="text" name="txtc" id="txtc" readonly> 
+		
+
+
+
+	</form>
+</td>
+<tr>
+</table>
+</body>
+</html>
