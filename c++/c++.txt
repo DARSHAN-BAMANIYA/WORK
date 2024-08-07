@@ -1,0 +1,229 @@
+       //odd and even
+ #include<iostream.h>
+ #include<conio.h>
+ void main()
+{
+  clrscr();
+int x;
+
+ cout<<"ENTER ANY NUMBER";
+ cin>>x;
+if(x%2==0)
+{
+cout<<"YOUR NUMBER IS EVEN";
+}
+else{
+cout<<"YOUR NUMBER IS ODD";
+}
+
+getch();
+}
+ 
+
+
+
+// leap year
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int x;
+
+ cout<<"ENTER ANY YEAR";
+ cin>>x;
+if(x%4==0)
+{
+cout<<"LEAP YEAR ";
+}
+else{
+cout<<"NOT A LEAP YEAR";
+}
+
+getch();
+}
+
+
+// swaping two no
+#include<iostream.h>
+#include<conio.h>
+void swap(){
+  int x,y;
+ cout<<"ENTER ANY TWO  NO:";
+ cin>>x>>y;
+
+cout<<"\nbefore swap";
+cout<<"\n value of x="<<x<<"value of y="<<y;
+x=x+y;
+y=x-y;
+x=x-y;
+cout<<"\nafter swap";
+cout<<"\n value of x="<<x<<"value of  y="<<y;
+}
+void main()
+{
+clrscr();
+swap();
+getch();
+}
+
+
+// employee in struct
+#include<iostream.h>
+#include<conio.h>
+struct employee
+{
+char name[20],branch[20];
+long int cod,sal;
+};
+void main()
+{
+clrscr();
+employee e1;
+cout<<"ENTER YOUR NAME:";
+cin>>e1.name;
+cout<<"ENTER YOUR BRANCH:";
+cin>>e1.branch;
+cout<<"ENTER YOUR CODE:";
+cin>>e1.cod;
+cout<<"ENTER YOUR SALARY:";
+cin>>e1.sal;
+cout<<"\nNAME:"<<e1.name<<"BRANCH:"<<e1.branch <<"CODE:"<<e1.cod <<"SALARY:"<<e1.sal;
+getch();
+}
+
+
+
+// student in struct
+#include<iostream.h>
+#include<conio.h>
+struct student
+{
+char name[20],branch[20];
+int id;
+};
+void main()
+{
+clrscr();
+student e1;
+cout<<"ENTER YOUR NAME:";
+cin>>e1.name;
+cout<<"ENTER YOUR BRANCH:";
+cin>>e1.branch;
+cout<<"ENTER YOU ID:";
+cin>>e1.id;
+cout<<"\nNAME:"<<e1.name<<"BRANCH:"<<e1.branch <<"ID:"<<e1.id ;
+getch();
+}
+
+
+
+// scope Resolution Operator. 
+#include<iostream.h>
+#include<conio.h>
+class add
+{
+  int x,y,sum;
+ public:
+ void gep();
+ void gap();
+};
+  void add::gep()
+  {
+ cout<<"enter any two  no:";
+ cin>>x>>y;
+ cout<<"\n value x= "<<x<<"value of y="<<y;
+ }
+ void add::gap()
+ {
+ sum=x+y;
+ cout<<"\n sum of x+y="<<sum;
+ }
+void main()
+{
+clrscr();
+add a;
+a.gep();
+a.gap();
+
+getch();
+}
+
+
+// simple interest. 
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+long int p,r,t,s;
+cout<<"enter your principal amount:";
+cin>>p;
+cout<<"enter your rate of interest:";
+cin>>r;
+cout<<"enter your time peroid:";
+cin>>p;
+ s=p*r*t/100;
+ cout<<"your simple interest id ="<<s;
+getch();
+}
+
+
+// maximum of two numbers
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int x,y ;
+cout<<"enter two number:";
+cin>>x>>y;
+if(x>y){
+cout<<"your maxium number="<<x;
+}
+else{
+cout<<"your maxium number="<<y;
+}
+getch();
+}
+
+
+// rectangle &  circle
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int a,l,b;
+cout<<"enter value of breath and length:";
+cin>>b>>l;
+a=l*b;
+cout<<"\n area of reactangle is="<<a;
+
+float pi=3.14;
+int  r,area;
+cout<<"\n enter value of radius:";
+cin>>r;
+area=pi*r*r;
+cout<<"\n area of circle= "<<area;
+getch();
+}
+
+
+// factorial
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int f=1,i,n;
+cout<<"enter any no :";
+cin>>n;
+
+for(i=1;i<=n;i++)
+{
+f=f*i;
+}
+cout<<" factorial ="<<f;
+getch();
+}
